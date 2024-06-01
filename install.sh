@@ -9,8 +9,8 @@ do_shared_things() {
 	
 }
 
-install_centos8() {
-	echo "Building XMRig for CentOS 8..."
+build_centos8() {
+	echo "Building XMRig on CentOS 8..."
 
 	do_shared_things
 
@@ -25,13 +25,13 @@ install_centos8() {
 	make -j$(nproc)
 }
 
-install_ubuntu() {
-	echo "Building XMRig for Ubuntu..."
+build_ubuntu() {
+	echo "Building XMRig on Ubuntu..."
 }
 
 display_menu() {
     clear
-    echo "Which system would you like to build XMRig for?"
+    echo "Which system would you like to build XMRig on?"
     echo "1. CentOS 8"
     echo "2. Ubuntu"
     echo "3. (Cancel)"
