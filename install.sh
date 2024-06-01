@@ -17,7 +17,8 @@ build_centos8() {
 	sudo dnf install -y epel-release
 	sudo yum config-manager --set-enabled PowerTools
 	sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-static automake libtool autoconf
-	
+	sudo yum install openssl openssl-devel
+
 	mkdir xmrig/build
 	cd xmrig/scripts && ./build_deps.sh && cd ../build
 
