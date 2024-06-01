@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 do_shared_things() {
-	
+	echo ""
 }
 
 build_centos8() {
