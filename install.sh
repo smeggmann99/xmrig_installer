@@ -40,9 +40,9 @@ display_menu() {
 handle_input() {
     read -rp "Enter your choice: " choice
     case $choice in
-        1) install_centos8 ;;
-        2) install_ubuntu ;;
-        3) echo "Cancelling..."; exit;;
+        1) build_centos8 ;;
+        2) build_ubuntu ;;
+        3) echo "Cancelling..."; clear; exit;;
         *) echo "Invalid choice. Please choose again.";;
     esac
 }
